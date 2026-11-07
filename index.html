@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none';">
+  <meta name="referrer" content="no-referrer">
+  <title>Памятка пассажира — что взять в самолёт</title>
+  <meta name="description" content="Простая памятка пассажира: что взять в самолёт, что нельзя в ручную кладь, как подготовиться к рейсу. Интерактивный чек-лист без регистрации и сбора данных.">
+  <meta name="theme-color" content="#1e90e0">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Перейти к содержимому</a>
+
+  <header class="header">
+    <div class="container">
+      <a class="brand" href="#top" aria-label="Памятка пассажира — на главную">
+        <span class="brand-mark" aria-hidden="true">✈</span>
+        <span>Памятка пассажира</span>
+      </a>
+      <nav class="nav" aria-label="Разделы">
+        <a href="#checklist-section">Чек-лист</a>
+        <a href="#rules">Можно и нельзя</a>
+        <a href="#steps">Этапы</a>
+        <a href="#faq">Вопросы</a>
+        <a class="keep" href="privacy.html">Конфиденциальность</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <div class="hero" id="top">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">✈ Подготовка к полёту без стресса</span>
+          <h1>Что взять <span>в самолёт</span> — просто и по делу</h1>
+          <p class="lead">Интерактивный чек-лист, список разрешённого и запрещённого в ручной клади и короткая инструкция по этапам — от сборов до посадки.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#checklist-section">✅ Собрать чек-лист</a>
+            <a class="btn ghost" href="#rules">🚫 Что нельзя брать</a>
+          </div>
+          <div class="stats" aria-label="Коротко о сайте">
+            <div class="stat"><b>29</b><small>пунктов в списке</small></div>
+            <div class="stat"><b>0</b><small>cookies и трекеров</small></div>
+            <div class="stat"><b>100%</b><small>бесплатно</small></div>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg" role="presentation">
+            <defs>
+              <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#e3f2fd"/><stop offset="1" stop-color="#ffffff"/>
+              </linearGradient>
+              <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#d8ecfb"/>
+              </linearGradient>
+              <linearGradient id="wing" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#4fb0ee"/><stop offset="1" stop-color="#1676c4"/>
+              </linearGradient>
+            </defs>
+            <circle cx="240" cy="180" r="165" fill="url(#sky)" stroke="#bfe3fb" stroke-width="2"/>
+            <g fill="#fff" stroke="#d8e9f7" stroke-width="2">
+              <ellipse cx="110" cy="250" rx="60" ry="22"/><ellipse cx="150" cy="238" rx="42" ry="22"/>
+              <ellipse cx="370" cy="120" rx="52" ry="19"/><ellipse cx="402" cy="110" rx="34" ry="17"/>
+              <ellipse cx="330" cy="300" rx="64" ry="20"/>
+            </g>
+            <g class="float">
+              <path d="M70 200 L360 150 Q420 142 430 168 Q420 192 360 196 L180 220 Z" fill="url(#body)" stroke="#9fcdf0" stroke-width="2"/>
+              <path d="M200 192 L150 70 L205 66 L290 176 Z" fill="url(#wing)"/>
+              <path d="M200 214 L130 318 L186 322 L276 206 Z" fill="url(#wing)" opacity=".9"/>
+              <path d="M82 198 L58 142 L96 138 L128 192 Z" fill="url(#wing)"/>
+              <g fill="#4fb0ee">
+                <circle cx="300" cy="172" r="7"/><circle cx="270" cy="177" r="7"/><circle cx="240" cy="182" r="7"/>
+                <circle cx="210" cy="187" r="7"/><circle cx="330" cy="167" r="7"/>
+              </g>
+              <path d="M395 156 Q420 154 424 168 Q418 180 396 182 Z" fill="#1676c4"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- ЧЕК-ЛИСТ -->
+    <section id="checklist-section" class="alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Чек-лист пассажира</h2>
+          <p>Отмечайте, что уже собрали. Отметки сохраняются только в вашем браузере и никуда не отправляются.</p>
+        </div>
+        <div class="panel">
+          <div class="toolbar" role="group" aria-label="Фильтр по категориям">
+            <button class="chip" type="button" data-filter="all" aria-pressed="true">Все</button>
+            <button class="chip" type="button" data-filter="docs" aria-pressed="false">📄 Документы</button>
+            <button class="chip" type="button" data-filter="carry" aria-pressed="false">🎒 Ручная кладь</button>
+            <button class="chip" type="button" data-filter="tech" aria-pressed="false">🔌 Электроника</button>
+            <button class="chip" type="button" data-filter="health" aria-pressed="false">💊 Здоровье</button>
+            <button class="chip" type="button" data-filter="comfort" aria-pressed="false">😴 Комфорт</button>
+            <button class="chip" type="button" data-filter="bag" aria-pressed="false">🧳 Багаж</button>
+          </div>
+
+          <div class="progress-wrap">
+            <div class="progress-top">
+              <span>Собрано: <span id="count">0 из 29</span></span>
+              <span id="pct">0%</span>
+            </div>
+            <div class="bar" role="progressbar" aria-label="Прогресс сборов" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="bar"></i></div>
+          </div>
+
+          <div id="checklist" aria-live="polite">
+            <noscript>Для интерактивного чек-листа нужен включённый JavaScript. Сайт не собирает данные и не использует сторонние скрипты.</noscript>
+          </div>
+
+          <div class="toolbar actions-row">
+            <button class="btn small" type="button" id="print">🖨 Распечатать</button>
+            <button class="btn small ghost" type="button" id="reset">↺ Сбросить отметки</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- МОЖНО / НЕЛЬЗЯ -->
+    <section id="rules">
+      <div class="container">
+        <div class="section-head">
+          <h2>Ручная кладь: можно и нельзя</h2>
+          <p>Общие ориентиры. Точные правила зависят от авиакомпании, аэропорта и страны — проверяйте их перед поездкой.</p>
+        </div>
+        <div class="two">
+          <div class="card ok">
+            <h3>✅ Обычно можно</h3>
+            <ul>
+              <li>Документы, телефон, ноутбук, планшет, наушники</li>
+              <li>Powerbank и запасные литиевые батареи — только в ручной клади</li>
+              <li>Жидкости, гели и кремы в небольших ёмкостях в прозрачном пакете</li>
+              <li>Личные лекарства в оригинальной упаковке</li>
+              <li>Детское питание и вещи для ребёнка в разумном количестве</li>
+              <li>Твёрдая еда: бутерброды, фрукты, печенье, орехи</li>
+              <li>Пустая бутылка для воды</li>
+            </ul>
+          </div>
+          <div class="card no">
+            <h3>🚫 Обычно нельзя</h3>
+            <ul>
+              <li>Колюще-режущие предметы: ножи, острые ножницы, лезвия</li>
+              <li>Жидкости в больших ёмкостях сверх лимита</li>
+              <li>Взрывчатые, легковоспламеняющиеся и токсичные вещества, фейерверки</li>
+              <li>Оружие и его имитация, включая некоторые сувениры</li>
+              <li>Баллончики, газовые зажигалки и горючее сверх разрешённого</li>
+              <li>Литиевые батареи и powerbank в сданном багаже</li>
+              <li>Любые предметы из перечня запрещённых у вашей авиакомпании</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ЭТАПЫ -->
+    <section id="steps" class="alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Путь пассажира по этапам</h2>
+          <p>Короткий план, который помогает ничего не забыть.</p>
+        </div>
+        <div class="steps">
+          <article class="step">
+            <span class="tag">За 1–2 дня</span>
+            <h3>Подготовка</h3>
+            <p>Проверьте документы и срок паспорта, условия багажа, пройдите онлайн-регистрацию, если авиакомпания её предлагает.</p>
+          </article>
+          <article class="step">
+            <span class="tag">День вылета</span>
+            <h3>Дорога в аэропорт</h3>
+            <p>Приезжайте с запасом времени — ориентируйтесь на рекомендации авиакомпании и аэропорта для вашего рейса.</p>
+          </article>
+          <article class="step">
+            <span class="tag">В аэропорту</span>
+            <h3>Багаж и досмотр</h3>
+            <p>Сдайте багаж, пройдите контроль, достаньте жидкости и электронику по требованию сотрудников. Следите за табло.</p>
+          </article>
+          <article class="step">
+            <span class="tag">На борту</span>
+            <h3>Полёт</h3>
+            <p>Пристегните ремень, слушайте инструктаж, пейте воду и делайте разминку в длинных перелётах.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="container">
+        <div class="section-head">
+          <h2>Частые вопросы</h2>
+          <p>Короткие ответы общего характера.</p>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>Сколько жидкости можно взять в ручную кладь?</summary>
+            <p>Во многих аэропортах действует правило небольших ёмкостей в одном прозрачном пакете. Конкретные лимиты различаются, поэтому уточняйте их у авиакомпании и в аэропорту.</p>
+          </details>
+          <details>
+            <summary>Можно ли провозить powerbank?</summary>
+            <p>Как правило — только в ручной клади и с ограничением по ёмкости. Условия зависят от авиакомпании, поэтому проверьте их заранее.</p>
+          </details>
+          <details>
+            <summary>Что делать, если багаж потерялся?</summary>
+            <p>Не уходите из зоны выдачи: обратитесь к представителю авиакомпании или в бюро розыска багажа, сохраните багажную бирку и оформите заявление.</p>
+          </details>
+          <details>
+            <summary>Что взять, если лечу с ребёнком?</summary>
+            <p>Документы на ребёнка, сменную одежду, воду, перекус, влажные салфетки, любимую игрушку и всё необходимое для кормления. Правила по детскому питанию уточняйте заранее.</p>
+          </details>
+          <details>
+            <summary>Как помочь ушам при взлёте и посадке?</summary>
+            <p>Помогают глотательные движения: леденцы, жвачка или питьё. Если есть проблемы со здоровьем, посоветуйтесь с врачом до поездки.</p>
+          </details>
+        </div>
+        <div class="notice notice-wide">
+          <span aria-hidden="true">ℹ️</span>
+          <span>Сайт носит справочный характер и не является официальным источником. Подробнее — в <a href="terms.html">условиях использования</a>. Всегда сверяйтесь с правилами вашей авиакомпании, аэропорта и страны назначения.</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container row">
+      <div>
+        <strong>✈ Памятка пассажира</strong><br>
+        <small>© <span id="year">2026</span>. Без cookies, без аналитики, без рекламы.</small>
+      </div>
+      <nav aria-label="Юридическая информация">
+        <a href="privacy.html">Политика конфиденциальности</a> ·
+        <a href="terms.html">Условия использования</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
